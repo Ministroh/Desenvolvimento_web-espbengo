@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Protocolos de rede</title>
+<style type="text/css">
+body {
+    margin: 0;
+    background-color:#dddddd;
+}
+header#cabeçalho{
+  border-bottom:1px solid #606060;
+  margin-top:-20px auto 0px auto;
+  padding:5px;
+}
+  header#cabeçalho h2{
+    text-shadow:0px 0px 10px rgba(0,0,0,.5);
+    font-family:Times;
+  }
+ header#cabeçalho img{
+   position:absolute;
+   top:10px;
+   left:280px;
+   width:70px;
+   height:50px;
+   border:1px dashed #606060;
+ }
+div#baixo {
+    width: 100%;
+    padding:10px;
+    background: #606060;
+    display: inline-block;
+    margin:5px 5px 0px 5px;
+    box-shadow:0px 0px 10px rgba(0,0,0,.5);
+    
+}
+div#cima {
+    width: 100%;
+    padding: 10px;
+    background: white;
+    display: inline-block;
+    float:bottom;
+    margin:5px 5px 0px 5px;
+    box-shadow:0px 0px 10px rgba(0,0,0,.5);
+}
+  div#cima h3{
+    text-align:center;
+  }
+  div#baixo h3{
+    text-align:center;
+  }
+</style>
+</head>
+<body>
+  <header id="cabeçalho">
+    <h2>Tipos de Protocolos</h2>
+    <img src="protocolo de rede.webp" alt="protocolos de rede">
+  </header>
+    
+    <div id="cima">
+      <h3>TCP/IP</h3>
+      <p>O TCP/IP é a combinação de dois outros protocolos. Eles são os responsáveis por todo o envio e recebimento de dados em todas as redes e consequentemente, na Internet.</p>
+        De modo bastante simplificado, essa combinação de protocolos é dividida em 4 camadas:</p>
+      <ol>
+        <li>Primeiro há o recebimento das informações (camada de aplicação);</li>
+        <li>Depois elas fracionadas em pacotes ou conjuntos definidos de dados para o formato da rede (transporte);</li>
+        <li>Para a seguir serem endereçados (rede) e finalmente enviados ao destino (interface).</li>
+      
+    </div>
+  <div id="baixo">
+    <h3>HTTP e HTTPS</h3>
+    <p>Entre os mais usados e dos mais antigos, o HTTP (HyperText Transfer Protocol), é o que é usado toda vez que acessamos um site.</p>
+
+    <p>Você não precisa digitar “http://” a cada endereço que preenche no campo de endereço do navegador, mas assim que dá o enter, ele aparece lá.</p>
+    <p>O browser “entende” que é o protocolo padrão para sites e estabelece a conexão com o servidor no qual o site está hospedado, usando o HTTP.</p>
+
+    <p>À medida em que a evolução da Internet exigiu mais cuidados com aspectos de segurança, o HTTP puro e simples, vem caindo em desuso em detrimento do HTTPS, que nada mais é do que dotar a troca de dados entre o servidor e o visitante de criptografia, por meio da instalação de um certificado SSL.</p>
+
+    <p>Mas pode ser que em breve, comecemos a ver a popularização de outro protocolo com mesma finalidade, mas que promete melhor desempenho – o HTTP/3.</p>
+
+    <p>No caso de muitos apps que temos instalados nos nossos smartphones, é também o HTTPS o protocolo envolvido, já que muitas vezes um app nada mais é do que um navegador especializado, que exibe apenas um site também especializado e que pode ser um aplicativo de compras, por exemplo.</p>
+    </div>
+</body>
+</html>
