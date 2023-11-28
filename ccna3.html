@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="pt-br">
+               <head>
+                 <meta charset="UTF-8"/>
+                 <title>Desenvolvimento web</title> 
+                 
+                 <link rel="stylesheet" type="text/css" href="Estilo.css"/>
+                
+                </head>
+                
+<script>
+ function TrocaFoto(foto){
+document.getElementById("icone").src=foto;
+
+
+}            
+</script>
+
+<body>
+               <div id="interface">  
+                <header id="cabecalho">           
+                          <hgroup>
+                           <h1>Seja Bem Vindo ao Curso de Redes</h1>    
+                           
+                           </hgroup>    
+                         
+               
+              
+               
+           
+            <img id="icone" src="foto3.png" width="100"/>
+            <nav id="Menu">
+            <h1> MENU Principal</h1>
+             <ul type="square">
+             <li onmousemove="TrocaFoto('casa_de_redes.png')" onmouseout="TrocaFoto('foto3.png')" width="100"><a href="Home.html">Home</a></li>
+             <li onmousemove="TrocaFoto('foto1.png')"  onmouseout="TrocaFoto('foto3.png')" ><a href="ccna1.html">CCNA 1</a></li>
+              <li onmousemove="TrocaFoto('foto2.png')"  onmouseout="TrocaFoto('foto3.png')" ><a href="ccna2.html">CCNA 2</a></li>
+              <li onmousemove="TrocaFoto('foto3.png')"  onmouseout="TrocaFoto('foto3.png')" ><a href="ccna3.html">CCNA 3</a></li>
+             <li onmousemove="TrocaFoto('fotoCyber.png')"  onmouseout="TrocaFoto('foto3.png')" ><a href="CyberSecurity.html">Cyber Security</a></li>
+      
+             </ul>
+
+            </nav>
+           </header>
+           <section id="corpo">
+            <article id="noticia-principal">  
+     
+
+             <h2 style="text-align:center;">CCNA 3</h2>
+               
+              <h3>Modos de Comando da CLI</h3>
+<p>	O modo de configuração global (config global) permite alterações de configuração e acesso a modos específicos do roteador.
+             <p>	Para acessar o modo de configuração global, deve-se estar no modo privilegiado e digitar configure terminal ou conf t.
+             <p>	O prompt do modo de configuração global é: router(config)#.
+             <p>	Estes são alguns dos modos em que se pode entrar a partir do modo de configuração global: Modo de interface,  Modo de linha, Modo de roteador, Modo de subinterface e  
+             Modo de controlador. 
+               <h3>Modos de Comando da CLI</h3>
+             <p>Quando se entra nesses modos específicos, o prompt do roteador muda para indicar o modo de configuração atual. 
+             <p>	O comando exit a partir dos modos de configuração específicos, permite o retorno ao modo de configuração global.
+             <p>	Ao pressionar Ctrl-Z retorna-se direto ao modo EXEC privilegiado.
+               <h3>Configurando o Nome de um Roteador</h3>
+             <p>	Uma das primeiras tarefas de configuração é dar um nome exclusivo ao roteador. 
+             <p>	Isso é feito no  modo de configuração global, utilizando-se o comando hostname {nome do roteador}.
+             <p>	Quando a tecla Enter é pressionada, o prompt muda, passando do nome do host padrão (Router) para o nome do host recém-configurado.
+              
+               <h3>Configurando Senhas de Roteadores</h3>
+<p>Deve-se configurar senhas para terminal virtual, para console e para controlar o acesso ao modo EXEC privilegiado. 
+  <h3>Examinando os Comandos Show</h3>
+             <p>	show interfaces: exibe todas as estatísticas para todas as interfaces do roteador.
+             <p>	show controllers serial: exibe informações específicas da interface de hardware.
+             <p>	show clock:  mostra o horário definido no roteador.
+             <p>	show hosts: mostra uma lista em cache dos nomes e endereços dos hosts.
+             <p>	show users: exibe  todos os usuários que estão conectados ao roteador.
+             <p>	show history: exibe um histórico dos comandos que foram inseridos. 
+              
+             <p>	show flash: exibe informações sobre a memória flash e quais arquivos do IOS estão armazenados nela.
+             <p>	show version: exibe informações sobre a versão do software carregado no momento, além de informações de hardware e dispositivo.
+             <p>	show ARP:  exibe a tabela ARP do roteador.
+             <p>	show protocol: exibe o status global e o status específico da interface de quaisquer protocolos de camada 3 configurados.
+            <p>	show startup-config: exibe o conteúdo da NVRAM ou exibe o arquivo de configuração de backup.
+<p>show running-config: exibe o conteúdo do arquivo de configuração em execução.
+  <h3> Configuração de Interface Serial</h3>
+<p>Para configurar uma interface serial, siga estas etapas: 
+             <p>	Entre no modo de configuração global: • Router#configure terminal
+             <p>	Entre no modo de interface:
+             <p>	Router(config) #interface serial  0
+             <p>	Especifique o endereço da interface e a máscara de sub-rede:
+             <p>	Router(config-if)#ip address < endereço IP> <máscara rede >
+               <h3> Configuração de Interface Serial</h3>
+            <p>Se houver um cabo DCE conectado, defina a taxa do clock:
+             <p>	Router(config-if)#clock rate 56000
+             <p>	Pule esta etapa se houver um cabo DTE conectado. 
+             <p>	Ative a interface:
+             <p>	Router(config-if)#no shutdown
+             <p>	OBS: O comando shutdown desativa uma interface.
+               <h3>Alterando Configurações</h3>
+             <p>	show running-config: verifica o conteúdo da memória RAM (arquivo de configuração atual);
+             <p>	show startup-config: verifica o conteúdo da memória NVRAM (arquivo de configuração de backup);
+             <p>	copy running-config startup-config: copia o arquivo de configuração atual na NVRAM;
+             <p>	copy running-config tftp: copia o arquivo de configuração atual em um servidor tftp.
+             <p>	copy startup-config running-config: copia o arquivo de configuração de backup (NVRAM) para a memória RAM;
+             <p>	copy startup-config tftp: copia o arquivo de configuração de backup (NVRAM) para um servidor tftp;
+               <h3>Alterando Configurações</h3>
+             <p>	copy tftp running-config: copia o conteúdo contido em um servidor tftp para a memória RAM do roteador;
+             <p>	copy tftp startup-config: copia o conteúdo contido em um servidor tftp para a memória NVRAM do roteador.
+               <h3> Configuração de Interface Ethernet</h3>
+             <p> Para configurar uma interface Ethernet, siga estas etapas: 
+             <p>Entre no modo de configuração global:
+             <p>Router#configure terminal
+             <p>Entre no modo de configuração da interface:
+             <p>Router(config)#interface ethernet 0
+             <p>Especifique o endereço da interface e a máscara de sub-rede:
+             <p>Router(config-if)#ip address < endereço IP> <máscara rede >
+             <p>Ative a interface:
+<p>Router(config-if)#no shutdown
+             <p>OBS: O comando shutdown desativa uma interface.
+               <h3>Padrões de Configuração </h3>
+              
+             <p>	Um padrão é um conjunto de regras ou procedimentos que são amplamente utilizados ou são especificados oficialmente. 
+             <p>	Sem padrões em uma organização, uma rede pode ficar caótica caso ocorra uma interrupção do serviço. 
+             <p>	Para gerenciar uma rede, deve haver um padrão de suporte centralizado. 
+             <p>	Criar padrões para a consistência da rede ajuda a reduzir a sua complexidade, o tempo de inatividade não planejado e a exposição a incidentes que podem ter impacto no desempenho da rede.
+               <h3> Descrições de Interface</h3>
+              
+             <p> Uma descrição de interface deve ser usada para identificar informações importantes, tais como um roteador distante, um número de circuito ou um segmento de rede específico.
+               <h3>Configuração da Descrição da Interface</h3>
+              
+<p>	Etapas do procedimento:
+             <p>	Entre no modo de configuração global:
+             <p>	Router#configure terminal
+             <p>	Entre no modo da interface específica:
+             <p>	Router(config) #interface serial  0
+             <p>	Insira a descrição do comando seguida da informação que deve ser exibida:
+             <p>	Router(config-if)#description Rede XYZ, Prédio 18
+         
+             <p>	Saia do modo de interface, voltando para o modo EXEC privilegiado:
+             <p>	Router(config-if)#Ctrl-Z
+             <p>	Salve as alterações da configuração na NVRAM, usando o comando copy runningconfig startup-config:
+             <p>	Router#copy	running-config	startup -
+             config
+               <h3>Banners de Login</h3>
+             <p>Um banner de login é uma mensagem que é exibida no login e que é útil para transmitir mensagens que afetam todos os usuário da rede, tais como avisos de paradas iminentes do sistema. 
+             <p>	Um banner de login pode ser um aviso para que não se tente o login a menos que se tenha autorização. 
+              
+               <h3> Configurando a Mensagem do Dia</h3>
+              
+             <p>	Um banner com a mensagem do dia pode ser exibido em todos os terminais conectados. Siga estas etapas para criar e exibir uma mensagem do dia: 
+             <p>	Entre no modo de configuração global:
+             <p>	Router#configure terminal
+             <p>	Insira o comando para configurar a mensagem do dia:
+             <p>	Router(config)#banner motd # <Aqui vai a mensagem do dia> # • Salve as alterações:
+             <p>	Router(config)#Ctrl-Z
+             <p>	Router#copy running-config startup-config
+               <h3> Resolução de Nomes de Hosts</h3>
+              
+             <p>	A resolução de nomes de hosts é o processo usado por um sistema computacional para associar um nome de host a um endereço IP. 
+             <p>	Uma lista de nomes de hosts e seus respectivos endereços IP é chamada de tabela de hosts. 
+             <p>	Cada endereço IP exclusivo pode ter um nome de host associado a ele. 
+             <p>	Os nomes de hosts, diferentemente dos nomes DNS, têm significado somente no roteador no qual estão configurados 
+               <h3> Configuração de Tabelas de Hosts</h3>
+             <p>	Este é o procedimento para configurar a tabela de hosts:  
+             <p>	Entre no modo de configuração global do roteador:
+             <p>	Router#configure terminal
+             <p>	Insira o comando ip host seguido do nome do roteador e todos os endereços IP associados às interfaces em cada roteador:
+             <p>	Router(config)#ip host Cisco 10.0.0.2 
+             <p>	Continue inserindo até que todos os roteadores da rede tenham sido inseridos. 
+             <p>	Salve a configuração na NVRAM:
+<p>Router(config)#Ctrl-Z
+             <p>	Router#copy running-config startup-config
+               <h3>Backup e Documentação da Configuração</h3>
+             <p>	A configuração dos dispositivos de rede determina a maneira como a rede se comportará. 
+             <p>	O gerenciamento da configuração dos dispositivos inclui as seguintes tarefas: 
+             <p>	Listar e comparar arquivos de configuração em dispositivos em funcionamento;   
+              
+             <p>	Armazenar arquivos de configuração em servidores de rede; 
+             <p>Realizar instalações e atualizações de software. 
+             <p>	Os arquivos de configuração devem ser armazenados em backup para a eventualidade de algum problema. 
+              
+              
+             <p>	Para armazenar a configuração atual em um servidor TFTP de rede: 
+             <p>	Insira o comando copy running-config tftp;
+             <p>	Insira o nome a ser atribuído ao arquivo de configuração;Confirme as opções, respondendo sim todas as vezes.
+             <p>	Insira o endereço IP do host em que o arquivo de configuração será armazenado; 
+             <p>	Insira o nome a ser atribuído ao arquivo de configuração;  
+             <p>	Confirme as opções, respondendo sim todas as vezes.
+             <p>	Um arquivo de configuração armazenado em um dos servidores da rede pode ser usado para configurar um roteador: 
+             <p>	Insira o comando copy tftp running-config;
+             <p>	No prompt do sistema, selecione um arquivo de configuração de hosts ou de rede; 
+             <p>	No prompt do sistema, insira o endereço IP do host remoto onde o servidor TFTP está localizado; 
+             <p>	No prompt do sistema, insira o nome do arquivo de configuração ou aceite o nome padrão; 
+             <p>	Confirme o nome do arquivo de configuração e o endereço do servidor tftp fornecido pelo sistema. 
+             
+
+              
+           
+
+                   <p>...................</p>
+             </article>
+             </section>
+            
+            <aside id="lateral">
+              <h2 style="text-align:center;">CCNA 3: Conteudo Programatico</h2> 
+              <ul>
+                  <li> Modos de Comando da CLI</li>
+              </ul>
+             </aside> 
+           
+            <footer id="rodape">
+           <p>Miguel Manuel António (Ministroh)</br><a href="biblioteca.html" target="_blank"> Biblioteca</a></p>
+            </footer>
+            
+             </div> 
+             </body>
+       
+</html>

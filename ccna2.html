@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="pt-br">
+               <head>
+                 <meta charset="UTF-8"/>
+                 <title>Desenvolvimento web</title> 
+                 
+                 <link rel="stylesheet" type="text/css" href="Estilo.css"/>
+                
+                </head>
+                
+<script>
+ function TrocaFoto(foto){
+document.getElementById("icone").src=foto;
+
+} 
+           
+</script>
+
+<body>
+               <div id="interface">  
+                <header id="cabecalho">           
+                          <hgroup>
+                           <h1>Seja Bem Vindo ao Curso de Redes</h1>    
+                           
+                           </hgroup>    
+                         
+               
+              
+               
+           
+            <img id="icone" src="foto2.png" width="100"/>
+            <nav id="Menu">
+            <h1> MENU Principal</h1>
+             <ul type="square">
+             <li onmousemove="TrocaFoto('casa_de_redes.png')" onmouseout="TrocaFoto('foto2.png')" width="100"><a href="Home.html">Home</a></li>
+             <li onmousemove="TrocaFoto('foto1.png')"  onmouseout="TrocaFoto('foto2.png')" ><a href="ccna1.html">CCNA 1</a></li>
+              <li onmousemove="TrocaFoto('foto2.png')"  onmouseout="TrocaFoto('foto2.png')" ><a href="ccna2.html">CCNA 2</a></li>
+              <li onmousemove="TrocaFoto('foto3.png')"  onmouseout="TrocaFoto('foto2.png')" ><a href="ccna3.html">CCNA 3</a></li>
+             <li onmousemove="TrocaFoto('fotoCyber.png')"  onmouseout="TrocaFoto('foto2.png')" ><a href="CyberSecurity.html">Cyber Security</a></li>
+      
+             </ul>
+
+            </nav>
+           </header>
+           <section id="corpo">
+            <article id="noticia-principal">  
+
+             <h2 style="text-align:center;">CCNA 2</h2>
+             <h3>A Finalidade do Software Cisco IOS</h3>
+             <p>Um roteador ou switch não pode funcionar sem um sistema operacional. 
+              <p>A Cisco chama seu sistema operacional de Internetwork Operating System (Sistema Operacional de Interconexão de Redes) ou IOS. 
+                <p>	O Cisco IOS oferece os seguintes serviços de rede:
+                  <ul>
+                    <li>Funções básicas de roteamento e comutação;</li>
+                <li>Acesso confiável e seguro aos recursos da rede; 
+                  <li>Escalabilidade.</li>
+                </ul>
+                <h3>Interface do Usuário do Roteador</h3>
+             <p>O software Cisco IOS usa uma interface de linha de comando interface de linha de comando (CLI).</p>
+              <p>Essa interface pode ser acessada através de diversos métodos. Uma maneira de acessar a CLI é através
+                de uma sessão de console. </p>
+                <img src="linhaDecomandoRoteador.jpg" alt="linha de comando Roteador" width="200">
+              <p>Outra maneira de acessar uma sessão da CLI é usando uma conexão discada (dial-up) através
+              de um modem ou de um cabo nullmodem conectado à porta AUX do roteador.
+              <p>Outro método para acessar uma sessão CLI é conectar-se via Telnet ao roteador. 
+                  <h3>Modos da Interface do Usuário</h3>
+             <p>	A interface de linha de comando (CLI) da Cisco exige a entrada em diferentes modos para realizar as tarefas. 
+             <p>	O IOS fornece um serviço de interpretação de comandos conhecido como executivo de comandos (EXEC), que faz com que cada comando inserido seja validado e executado pelo EXEC.
+             <p>	O Cisco IOS separa as sessões EXEC em dois níveis de acesso: modo EXEC de usuário e modo EXEC privilegiado ( modo de ativação ).
+                <p>	O modo EXEC de usuário permite uma quantidade limitada de comandos básicos de monitoramento e pode ser identificado pelo prompt ">". 
+                    <p>	O modo EXEC privilegiado permite acesso a todos os modos do roteador e permite a visualização de informações. Pode ser identificado pelo prompt "#". 
+                  <p>	Para acessar o nível EXEC privilegiado a partir do nível EXEC de usuário, digite o comando enable no prompt ">". 
+               <p>	Inserir um ponto de interrogação (?) no modo EXEC privilegiado revela todas as opções de comandos, além das disponíveis no modo EXEC de usuário. 
+                      
+                     <h3>Características do Software Cisco IOS </h3> 	
+                     Embora existam muitas imagens de IOS para diferentes modelos de dispositivos e conjuntos de recursos da Cisco, a estrutura básica dos comandos de configuração é a mesma. 
+                        	<p>A convenção de nomes para as diferentes versões do Cisco IOS contém três partes:</p>  
+                      	   <ul>
+
+                              <li>A plataforma na qual a imagem é executada; </li>
+                        	<li>Os recursos especiais suportados pela imagem; </li>
+                          <li>Onde a imagem é executada e se ela foi zipada ou compactada.</li>
+                        </ul>
+                        
+                        <p>	Quanto mais nova a versão do IOS e quanto mais recursos ela oferecer, mais memória será necessária. 
+<p>		Antes de instalar uma nova imagem do software Cisco IOS no roteador, verifique se 	este 	atende 	às exigências 	de 	memória para essa imagem. 
+<p>		Para 	encontrar 	a quantidade 	de 	memória flash, use o comando show flash. 
+<p>	Para ver a quantidade de RAM, use o comando show version.
+                          
+                          <h3>Operando o Software Cisco IOS</h3>
+<p>	Os dispositivos que utilizam o IOS Cisco têm três modos operacionais: 
+                         <ul> 
+                           <li>ROM Monitor: realiza o processo inicial de inicialização (bootstrap), oferece ao usuário um conjunto de comandos para operação de baixo nível e para diagnóstico do equipamento, permite a correção de falhas do sistema
+                         e recuperação de senhas perdidas. Só pode ser acessado via console;</li>
+                           <li>Boot ROM: disponibiliza um subconjunto limitado dos recursos do Cisco IOS, permite operações de gravação na memória flash;</li>
+                           <li>Cisco IOS: em alguns dispositivos, o IOS é executado a partir da flash, mas a maioria dos roteadores Cisco requer que uma cópia do IOS seja carregada e executada a partir da RAM.
+                        Operando o Software Cisco IOS.</li>
+                       </ul>
+<p>	O valor definido no configuration register (registrador de configuração) é usado para controlar o modo como o roteador será inicializado. 
+<p>	O comando copy tftp flash copia uma imagem do IOS armazenada em um servidor TFTP para a memória flash do roteador. 
+<p>		O comando show version permite a visualização da  imagem e versão do IOS que está sendo executado e indica como o configuration register está definido. 
+<p>		Já o comando show flash é usado para verificar se o sistema tem memória suficiente para carregar uma nova imagem do Cisco IOS.
+                          <h3>Inicialização do Roteador</h3>
+                          As rotinas de inicialização devem realizar as seguintes tarefas: 
+                         <ul> 
+                            <li>Certificar-se de que o hardware do roteador foi 
+                        testado e está funcional;</li>
+                        
+                                                   
+                          
+                        	
+                        <li>Encontrar e carregar o software Cisco IOS;</li>
+                        <li>Encontrar e aplicar o arquivo de configuração armazenado (startup configuration) ou entrar no modo Setup. </li>
+                        <h3>Modo Setup</h3>
+<p>		A finalidade do modo Setup é permitir uma configuração mínima para um roteador que não seja capaz de localizar uma configuração a partir de outra fonte. 
+<p>		Pressionando Ctrl-C encerra-se o processo de configuração do modo Setup. 
+                        LEDs
+                         
+<p>		Os roteadores Cisco utilizam LEDs para fornecer informações sobre seu estado operacional. 
+<p>		Um LED desligado quando a interface está ativa e conectada corretamente, indica um problema.
+<p>	Uma interface muito ocupada, estará sempre com o LED aceso. 
+<p>		O LED verde de OK à direita da porta AUX aceso, indica que o sistema foi inicializado corretamente. 
+                          <h3>Examinando a Inicialização do Roteador</h3> 
+<p>		Na inicialização do roteador, o usuário pode determinar as versões do bootstrap e do IOS, assim como o modelo do roteador, o processador, a quantidade de memória, a quantidade de interfaces, os tipos de interfaces, a quantidade de NVRAM e a quantidade de memória flash. 
+<p>		O valor padrão de fábrica do configuration register é 0x2102, que indica que o roteador deve tentar carregar uma imagem do Cisco IOS a partir da memória flash. 
+<p>		NVRAM invalid, possibly due to write erase (NVRAM inválida, possivelmente devido a ter sido apagada pelo comando write erase), indica ao usuário que o roteador ainda não foi configurado ou que a NVRAM foi apagada. 
+                          <h3> Estabelecendo uma Sessão de Console</h3> 
+<p>	Todos os roteadores Cisco contêm uma porta de console serial assíncrona (RJ-45) TIA/EIA-232. 
+<p>		Um terminal de console pode ser um terminal ASCII ou um PC que esteja executando um software de emulação de terminal, como o HyperTerminal. 
+<p>		Para conectar um PC que esteja executando um software de emulação de terminal à porta de console, use o cabo rollover RJ-45/RJ-45 com o adaptador fêmea RJ-45/DB-9. 
+<p>	Os parâmetros padrão para a porta de console são: 9600 baud, 8 bits de dados, sem paridade, 1 bit de parada, sem controle de fluxo. 
+<p>	Efetuando o Login no Roteador 
+<p>		Após efetuar o login em um roteador, é exibido o prompt do modo EXEC de usuário: >.
+<p>		Enable permite o acesso ao modo EXEC privilegiado.
+<p>		No prompt password: digita-se a senha que foi definida com o comando enable secret. 
+<p>		Dois comandos são usados para definir uma senha de acesso 	ao 	modo 	EXEC 
+                        privilegiado: enable password e enable secret.
+<p>		Se os dois comandos forem usados, enable secret tem precedência. 
+                        <h3>Efetuando o Login no Roteador</h3> 
+<p>	Concluídas as etapas de login, o prompt muda para #, (modo EXEC privilegiado). 
+<p>		O modo Setup global permite alteração e efetivação de configurações, além de permitir ao usuário acessar outros submodos como: Interface, Subinterface, Line, Router e Route map.
+<p>		Os comandos disable ou exit permitem o retorno ao modo EXEC de usuário a partir do modo EXEC privilegiado.
+<p>		Os comandos  exit ou Ctrl-Z permitem o retorno ao modo EXEC privilegiado a partir do modo Setup global.
+<p>		Ctrl-Z também pode ser usado para voltar diretamente ao modo EXEC privilegiado a partir de qualquer submodo da configuração global.
+                          <h3>Ajuda do Teclado na CLI do Roteador</h3> 
+<p>	Ao digitar um ponto de interrogação (?) no prompt do modo EXEC de usuário ou no prompt do modo EXEC privilegiado é exibida uma lista útil dos comandos disponíveis. 
+<p>		O prompt --More-- na parte inferior da tela indica que há várias telas disponíveis como saída. A próxima tela disponível pode ser visualizada pressionando-se a barra de espaço. Para exibir apenas a linha seguinte, pressiona-se a tecla Enter. 
+<p>		Se um usuário quiser ajustar o clock do roteador mas não souber o comando necessário, pode usar a função de ajuda para verificar o comando correto. 
+                          <h3>Modo de Edição Avançado</h3> 
+<p>		A interface do usuário inclui um modo de edição avançado, que oferece um conjunto de funções de teclas de edição, que permitem que o usuário edite uma linha de comando durante a digitação.
+<p>		O modo de edição avançado está ativado automaticamente na versão atual do software, mas pode ser desativado por meio do comando terminal no editing no prompt do modo EXEC privilegiado.  
+                         
+                          <h3>Histórico de Comandos do Roteador </h3>
+<p>	A interface do usuário oferece um histórico ou registro dos comandos que foram inseridos, tornando possível a realização das seguintes tarefas: 
+                        <ul>
+                        <li>Definir o tamanho do	buffer	do histórico de comandos;</li> 
+                        <li>Relembrar comandos; </li>
+                       <li>Desativar o recurso de histórico de comandos.</li> 
+                            </ul>
+<p>		O histórico de comandos é ativado por padrão,  registra dez linhas. A quantidade máxima de comandos é 256. 
+  <h3>Solucionando Erros</h3>
+<p>		Os erros de linha de comando ocorrem principalmente devido a erros de digitação. 
+<p>		Se a palavra-chave de um comando for digitada de maneira incorreta, a interface do usuário proporciona o isolamento do erro, na forma de um indicador de erro (^). O símbolo ^ aparece no ponto da linha de comando onde foi inserido um comando, palavra-chave ou argumento incorreto. 
+                          <h3>O Comando Show Version</h3>
+<p>	As seguintes informações podem ser visualizadas com a inserção do comando show version: 
+                         <ul>
+                        	Versão e informações descritivas do IOS em uso; 
+                        <li>Versão da Bootstrap ROM;</li>	 
+                        <li>Versão da Boot ROM;</li>	 
+                        <li>Tempo decorrido desde a inicialização do roteador; </li>	
+                        <li>Método utilizado na última reinicialização do roteador; </li>		
+                        <li>Arquivo da imagem do sistema em uso e sua localização;</li>		 
+                        <li>Plataforma de hardware do roteador; </li>		
+                        <li>Valor do configuration register. </li>		
+                         </ul>
+
+             </article>
+             </section>
+            
+            <aside id="lateral">
+              <h2 style="text-align:center;">CCNA 2: Conteudo Programatico</h2> 
+              <ul>
+                  <li> A Finalidade do Software Cisco IOS</li>
+              </ul>
+             </aside> 
+           
+            <footer id="rodape">
+           <p>Miguel Manuel António (Ministroh)</br><a href="biblioteca.html" target="_blank" >Biblioteca	</a></p>
+            </footer>
+            
+             </div> 
+             </body>
+       
+</html>

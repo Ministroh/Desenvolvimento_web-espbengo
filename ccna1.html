@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="pt-br">
+               <head>
+                 <meta charset="UTF-8"/>
+                 <title>Desenvolvimento web</title> 
+                 
+                 <link rel="stylesheet" type="text/css" href="Estilo.css"/>
+                
+                </head>
+                
+<script>
+ function TrocaFoto(foto){
+document.getElementById("icone").src=foto;
+
+} 
+
+</script>
+
+<body>
+               <div id="interface">  
+                <header id="cabecalho">           
+                          <hgroup>
+                           <h1>Seja Bem Vindo ao Curso de Redes</h1>    
+                           
+                           </hgroup>    
+                         
+               
+              
+               
+           
+            <img id="icone" src="foto1.png" width="100"/>
+            <nav id="Menu">
+            <h1> MENU Principal</h1>
+             <ul type="square">
+             <li onmousemove="TrocaFoto('casa_de_redes.png')" onmouseout="TrocaFoto('foto1.jpg')" width="100"><a href="Home.html">Home</a></li>
+             <li onmousemove="TrocaFoto('foto1.png')"  onmouseout="TrocaFoto('foto1.png')" ><a href="ccna1.html">CCNA 1</a></li>
+              <li onmousemove="TrocaFoto('foto2.png')"  onmouseout="TrocaFoto('foto1.png')" ><a href="ccna2.html">CCNA 2</a></li>
+              <li onmousemove="TrocaFoto('foto3.png')"  onmouseout="TrocaFoto('foto1.png')" ><a href="ccna3.html">CCNA 3</a></li>
+             <li onmousemove="TrocaFoto('foto1.png')"  onmouseout="TrocaFoto('foto1.png')" ><a href="CyberSecurity.html">Cyber Security</a></li>
+      
+             </ul>
+
+            </nav>
+           </header>
+           <section id="corpo">
+            <article id="noticia-principal">  
+             
+             <h2 style="text-align:center;">CCNA 1</h2>
+              <h3>Requisitos para conexão à internet</h3>
+              
+              <p>Para disponibilizar o acesso de um computador à rede, 
+devem ser levados em consideração 03 parâmetros:
+</p>
+              <ul>
+                <li><b>Conexões Físicas Conexões Físicas:</b> interface física, como um 
+modem ou 01 placa de rede, entre o computador e o 
+meio utilizado em sua rede;</li>
+                <li><b>Conexões Lógicas Conexões Lógicas:</b>conjunto de padrões denominados protocolos, responsáveis pelas convenções e regras que governam a maneira de 
+comunicação entre os dispositivos em uma rede;
+</li>
+                <li><b>Aplicativos Aplicativos:</b> Programas que trabalham com os protocolos, responsáveis por fornecer uma interface
+inteligível para os usuários.</li>
+
+              
+           
+
+              </ul>
+              <h3>Instalação e configuração</h3>
+              <b>Componentes Pequenos, Discretos:</b>
+              <p>Componentes Discretos são dispositivos que em conjunto realizam alguma função específica.
+                <p>Exemplos: Transistor, Resistor, Capacitor, Conector e Diodos. 
+ 	 	 
+                  <p>Circuito Integrado: dispositivo feito de material semicondutor que realiza uma função específica.
+<p>LED (Diodo Emissor de Luz): dispositivo semicondutor que emite luz ao passar por ele uma corrente elétrica.
+<p>Conector: extremidade de um cabo que é ligado a uma porta ou interface.
+ 	 	 
+  <h3>CI	LEDs	Conectores</h3>
+  <p>Subsistemas de um Computador Pessoal:
+<p> Placa-Mãe (backplane): placa de circuito impressa principal, responsável por interligar os principais componentes do computador (barramentos).  
+ 
+ 
+  <h3>Componentes Básicos de PC´s</h3>
+  Subsistemas de um Computador Pessoal:
+<p>Slot de Expansão: porta na Placa-Mãe que permite instalar novos hardwares no PC.
+
+  Padrões de Slots das Placas-Mãe:
+    <ul>
+      <li> Padrão ISA – 8  ou 16 bits</li>
+ 
+      <li>Padrão EISA – 32  bits</li>
+ 
+      <li>	Padrão VESA Local Bus (VLBus) – 32  bits</li>
+      <li>Padrão PCI – 32  bits</li>
+ 
+      <li>	AGP</li>
+    </ul>
+    <ul>
+    Exemplos de Componentes de Placas Mãe:
+      <li> Placa de rede (NIC): proporciona ao computador acesso a rede.</li>
+        <li>	Placa de Vídeo: proporciona ao computador capacidade de exibição visual.</li>
+      </ul>
+ 	 
+      <p>Barramentos: são as conexões em uma placa de circuito impresso através dos quais os dados são transmitidos.
+<p>Barramento de Dados (Data Bus)
+<p>Barramento de Endereço (Address Bus)
+<p>	Barramento de Controle (Control Bus)
+<p>	Fonte de Alimentação: fornece energia a PlacaMãe do computador.
+  Componentes de backplane: 
+    <ul>
+      <li>Porta Paralela: porta capaz de transmitir vários bits simultaneamente.</li>
+      <li>	Porta Serial: interface capaz de transmitir um bit de cada vez.
+        <li>Porta USB: permite a conexão de dispositivos de forma mais rápida e fácil.
+          <li>Firewire: interface de barramento serial que oferece comunicação de alta velocidade.
+            <li>Porta de Mouse: permite a conexão de um mouse.
+              <li>Cabo de Alimentação: cabo que conecta o dispositivo a rede elétrica.
+            <li>CPU – Unidade Central de Processamento: unidade  responsável pelo controle das funções dos demais dispositivos 
+<li>	Memórias:
+  <ul>
+    <li> Memória Apenas de Leitura (ROM): memória com dados pré-gravados, memória somente de leitura.
+  CACHE: <br>
+-	Memória de altíssima velocidade de acesso<br>
+-	Aumentar a transferência de dados<br>
+-	Fica entre o processador e a memória principal 
+( RAM )<br>
+ Memória Virtual: - Processar grandes programas com uma Memória Principal relativamente pequena (RAM). <br>
+- Utiliza a memória em disco como parte da Memória Principal.<br>
+NÍVEIS DE MEMÓRIAS<br>
+      <p>CAPACIDADE: Grande	
+        <p>VELOCIDADE: Alta<br>
+      </ul>
+     <p>Exemplo: Se o microcomputador tem 50KB de memória RAM útil e o tamanho de  um  programa  é  de 150KB,  este programa é  segmentado 
+      de  tal  forma  que somente o segmento ativo do programa  está na memória RAM, enquanto  os outros  segmentos ficam armazenados em disco.<br>
+<p> Combinação de Memórias :
+<p>Cache: armazena os blocos usados com  maior  freqüência<br>
+<p>RAM: com  alta  e  média freqüência de uso<br>
+<p>Memória Auxiliar  (Virtual): demais blocos<br>
+ 
+<p>Dispositivos de armazenamento:<br>
+<p>Unidade 	de 	disco 	rígido:
+unidade de armazenagem interna, onde são instalados os programas e dados.<br>
+ <p>Unidade de disco flexível: unidade capaz de ler, gravar, executar e excluir arquivos a partir de um disco flexível.<br>
+<p>	Unidade de CD-ROM: unidade que pode ler a partir de um CD.<br>
+ 	 
+<p>Placa de Rede é uma placa de circuito impresso instalada na placa mãe do computador, que fornece conectividade com a rede.<br>
+ 
+<p> São parâmetros importantes na seleção de uma placa de rede:<br>
+	Protocolos: Ethernet, Token Ring, ou 
+FDDI; <br>
+<p>Tipos de meios: Par trançado, coaxial, wireless, ou fibra óptica; <br>
+	   de barramento do sistema: PCI ou ISA.<br>
+ 
+      <h3>Modem</h3>
+ 60’s: Taxa de transmissão de dados = 300 bits por segundo (bps), que se traduzia em aproximadamente 30 caracteres por segundo.<br>
+70’s: BBS - Bulletin Board Systems (ainda usava 300 bps)<br>
+80’s: chegaram até 9600 bps (9 ,7kbps )
+90’s: em 1998 atingiram o padrão atual de 56 kbps (56.000 bps).<br>
+2000’s: Digital Subscriber Line (DSL) e acesso por cable modem<br>
+      <h3>Descrição e Configuração do TCP/IP</h3>
+<p> O TCP/IP é um conjunto de padrões e regras que governam a comunicação entre computadores.<br>
+<p>A configuração pode ser realizada através das ferramentas do sistema operacional.<br>
+ 
+  <h3>Testando a Conectividade com o Ping</h3>
+	<p>O Ping é um programa que testa a conectividade física e a configuração TCP/IP entre estações de trabalho, utilizando datagramas ICMP de Requisição de Eco.
+  
+	  <h3>Navegador Web e Plug-ins</h3>
+<p>	Os navegadores são programas responsáveis por interpretar a linguagem HTML e exibir as informações de forma inteligível ao usuário.
+<p>	Existem arquivos, os quais os navegadores normais, não podem exibir, sendo necessários aplicativos plug-in para exibir tais arquivos.
+ 
+  <h3>Apresentação Binária de Dados</h3>
+<p>Os computadores são sistemas que trabalham com chaves eletrônicas, que podem estar ligadas (1) ou desligadas (0), esses 02 estados são denominados dígitos binários, podendo ser representados pelo 
+  <h3>Bits e Bytes</h3>
+<p>	Um “0” binário é representado por 0 Volts e “1” binário é representado por 5 Volts.
+<p>	O grupo de 8 dígitos binários, denominado byte,  representa um endereço de memória ou um caractere. 
+ 
+  <h3>Sistema Numérico Base 10</h3>
+ 
+<p>	O Sistema Numérico de Base 10 é representado pelos símbolos 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, os quais podem ser combinados para formar todos os valores numéricos.
+Sistema Numérico Base 2
+ 
+<p>O Sistema Numérico de Base 2 é representado pelos símbolos 0 e 1.
+<p>Exemplo:
+ 10110 = (1 x 24 = 16) + (0 x 23 = 0) + (1 x 22 = 4) + 
+(1 x 21 = 2) + (0 x 20 = 0) = 22 (16 + 0 + 4 + 2 + 0) 
+<p>Convertendo números decimais em números binários de 8 bits
+  <p>Exercício de conversão:
+<p>Use o exemplo a seguir para converter o número decimal 168 em número binário: 
+<p>128 cabe dentro de 168. Portanto, o bit mais à esquerda do número binário é 1. <br>168 – 128 = 40. 
+<p>64 não cabe dentro de 40. Portanto, o segundo bit da esquerda é 0. 
+
+<p>32 cabe dentro de 40. Portanto, o terceiro bit da esquerda é 1. Subtraindo 40 – 32 = 8. 
+<p> 16 não cabe dentro de 8. Portanto, o segundo bit da esquerda é 0. 
+<p><p>8 cabe dentro de 8. Portanto, o quinto bit da esquerda é 1. 
+8 – 8 = 0. Portanto todos os bits à direita são 0. Resultado: 168 decimal = 10101000  
+  <h3>Conversão de números binários de 8 bits em números decimais</h3>
+<p>Exemplo:
+<p>Converta o número binário 01110000 em um número decimal. 
+<p>OBSERVAÇÃO:
+<p>Calcule da direita para a esquerda. Lembre-se de que qualquer número elevado à potência de 0 equivale a 1. Portanto, 20 =   1
+0	x 20 = 0 +
+0 x 21 = 0 +
+0 x 22 = 0 +
+0	x 23 = 0 +
+1	x 24 = 16 +
+1	x 25 = 32 +
+1 x 26 = 64 +
+0 x 27 =  0  = 112
+  <h3>Representação Decimal</h3>
+<p>	Os dispositivos em uma rede possuem um endereçamento lógico composto de 32 bits, divididos em 4 dígitos de 8 bits, conhecidos como octetos e representados de forma decimal.
+ 
+  <h3>Convertendo IP(Dec)/Binário e Binário/IP(Dec)</h3>
+<p>Hexadecimal
+<p>	O Sistema Numérico Hexadecimal é muito utilizado na exibição das informações, porque representa eficientemente através de 02 dígitos, 08 dígitos binários.
+<p>	Símbolos: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E e F.
+ 
+  <h3>Hexadecimal (Conversões)</h3>
+ 
+  <h3> A Lógica Booleana ou Binária</h3>
+<p>	Os circuitos digitais realizam uma série de funções booleanas, recebendo 01 ou mais entradas, gerando uma 
+ 
+ 
+<p>	O endereço ip é dividido em 02 campos.
+<p>Os bits mais a esquerda, representam o identificador da rede e o restante representa o identificador do host na rede.
+ <p>	O limite entre o endereçamento da rede e do host é definido pela máscara de rede.
+ 
+<p>Alguns exemplos de máscaras de rede são: 
+<p>11111111.00000000.00000000.00000000 escrito em decimal pontuado como 255.0.0.0
+<p>(8 bits da esquerda representam a porção do endereço da rede, e os últimos 24 bits representam a porção do endereço do host)
+11111111.11111111.00000000.00000000 escrito em decimal pontuado como 255.255.0.0 (16 bits de rede e 16 bits de host)
+11111111.11111111.11111111.00000000 escrito em decimal pontuado como 255.255.255.0
+(24 bits de rede e 8 bits de host)
+  <p>Aplicando a função AND:
+<p>A operação booleana AND sobre o endereço IP 10.34.23.134 junto com a máscara de rede 255.0.0.0 produz o endereço de rede deste host: 
+00001010.00100010.00010111.10000110 (10.34.23.134)
+11111111.00000000.00000000.00000000 (255.0.0.0) 00001010.00000000.00000000.00000000 (10.0.0.0)
+
+  <p>e com a máscara de sub-rede* 255.255.0.0 
+00001010.00100010.00010111.10000110 (10.34.23.134)
+11111111.11111111.00000000.00000000 (255.255.0.0) 00001010.00100010.00000000.00000000 (10.34.0.0) ... indicando uma outro domínio da rede.
+
+              
+             </article>
+             </section>
+            
+            <aside id="lateral">
+              <h2 style="text-align:center;">CCNA 1: Conteudo Programatico</h2> 
+              <ul>
+                  <li> Requisitos para conexão à internet</li>
+                <li>Componentes básicos do computador</li>
+                <li>Placa de rede</li>
+                <li>Modem</li>
+                <li>Descrição e configuração do TCP/IP</li>
+                <li>Testando a conectividade com o Ping</li>
+                <li>Navegador Web e Plug-ins</li>
+                <li>Apresentação binária de dados</li>
+                <li>Bits e byte</li>
+                <li>Sistema numérico base 10</li>
+                <li>Sistema numérico base 2</li>
+                <li>Conversão: Decimal para binário de 8 bits</li>
+                <li>Conversão: Binário de 8 bits para Decimal</li>
+                <li>Representação decimal</li>
+                <li>Hexadecimal</li>
+                <li>Lógica booleana</li>
+                <li>Endereço IP e máscaras de Rede</li>
+              </ul>
+              
+             </aside> 
+           
+            <footer id="rodape">
+           <p>Miguel Manuel António (Ministroh)</br><a href="biblioteca.html" target="_blank"> Biblioteca</a></p>
+            </footer>
+            
+             </div> 
+             </body>
+       
+</html>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="pt-br">
+               <head>
+                 <meta charset="UTF-8"/>
+                 <title>Desenvolvimento web</title> 
+                 
+                 <link rel="stylesheet" type="text/css" href="Estilo.css"/>
+                
+                </head>
+                
+<script>
+ function TrocaFoto(foto){
+document.getElementById("icone").src=foto;
+
+
+}            
+</script>
+
+<body>
+               <div id="interface">  
+                <header id="cabecalho">           
+                          <hgroup>
+                           <h1>Seja Bem Vindo ao Curso de Redes</h1>    
+                           
+                           </hgroup>    
+                         
+               
+              
+               
+           
+            <img id="icone" src="casa_de_redes.png" width="100"/>
+            <nav id="Menu">
+            <h1> MENU Principal</h1>
+             <ul type="square">
+             <li onmousemove="TrocaFoto('casa_de_redes.png')" onmouseout="TrocaFoto('casa_de_redes.png')" width="200"><a href="Home.html">Home</a></li>
+             <li onmousemove="TrocaFoto('foto1.png')"  onmouseout="TrocaFoto('casa_de_redes.png')" ><a href="ccna1.html">CCNA 1</a></li>
+             <li onmousemove="TrocaFoto('foto2.png')"  onmouseout="TrocaFoto('casa_de_redes.png')" ><a href="ccna2.html">CCNA 2</a></li>
+             <li onmousemove="TrocaFoto('foto3.png')"  onmouseout="TrocaFoto('casa_de_redes.png)" ><a href="ccna3.html">CCNA 3</a></li>
+             <li onmousemove="TrocaFoto('fotoCyber.png')"  onmouseout="TrocaFoto('casa_de_redes.png')" ><a href="CyberSecurity.html">Cyber Security</a></li>
+             
+      
+             </ul>
+
+            </nav>
+           </header>
+           <section id="corpo">
+            <article id="noticia-principal">  
+
+            <h2 style="text-align:center;">Introduçao as Redes de Computadores</h2>
+  <video controls>
+  width="400"
+  height="400" 
+  poster=" "
+  <source src=" " type="video/mp4" />
+   </video>
+               <p> Uma rede é o Conjunto de dispositivos ligados entre si que podem trocar 
+informações e compartilhar recursos. </p>
+              
+              
+                <img src="redesphoto.png" alt="exemplo de rede" width="200">
+ 
+              
+              <h3>Componentes de uma rede</h3>
+              
+               <p>Uma rede é composta por:</p>
+              <ul>
+                <li>Computadores Clientes (Estação de Trabalho), é o computador do usuário final.</li><br>
+                  
+               <li>Servidores - São computadores que compartilham algum como disco para armazenamento de dados ou impressoras.</li><br>
+                <li>Interfaces de Redes – Usados em desktops e notebooks, hoje em 
+              dia vem de fabrica com uma “placa de rede” incorporada.</li><br>
+                <figure>
+                  <img src="placa_de_rederj45.jpg" alt="placa de rede" width="150">
+                  <figcaption>
+                    <p><i>Placa de rede</i></p>
+                    
+                  </figcaption>
+                  
+                <li>Cabos - A maior parte das redes utilizam cabo de rede UTP, algumas redes usam cabo coaxial ou fibra ótica de acordo com 
+a necessidade.</li><br>
+               
+                  <img src="cabos-de-rede-utp-ftp-stp-sftp.jpg" alt="Cabo par trançado" width="200">
+                <figcaption>
+                <p><i>Cabos: Par trançado blindado(STP) e não blindado(UTP)</i></p>
+                    
+                  </figcaption>
+                
+               
+                <li>Switches e Roteadores – Os Switches Ligam dispositivos 
+entre si e os roteadores conectam redes diferentes.</li><br>
+                  <img src="switch.jpg" alt="switch e roteador" width="200">
+                  
+                  <li>Redes sem Fio –Antenas, placas de redes sem fio, pontos de acessos, etc.</li>
+                  <img src="placa_wireless.jpg" alt"placa rede sem fio" width="200">
+                  <figcaption>
+                <p><i>Placa de rede sem fio</i></p>
+   
+                  </figcaption>
+                </ul>
+           
+                    <p>Classificação das redes quanto a estrutura de comunicação</p>
+                  <ul>
+                <li>LAN (Local Area Network) – Pode ser definida como uma rede 
+geograficamente pequena, uma rede local.</li>
+                  </ul>
+               
+              </figure>
+      
+                 
+             </article>
+             </section>
+            
+            <aside id="lateral">
+              <h2 style="text-align:center;">Home</h2> 
+              <ul>
+                <li>Definição</li>
+                <li>Componentes de uma rede</li>
+                <li>Topologias</li>
+                <li>Protocolos TCP/IP e outros</li>
+                <li>Endereço IP</li>
+                <li>Broadcast</li>
+                  <li>Enlaces</li>
+                  <li>ndereço MAC</li>
+                <li>Domínios</li>
+                <li>Cabeamento</li>
+                  <li>Fibra Ótica</li>
+                  
+
+                
+              </ul>
+             </aside> 
+           
+            <footer id="rodape">
+           <p>Miguel Manuel António (Ministroh)</br><a href="biblioteca.html" target="_blank"> Biblioteca</a></p>
+            </footer>
+            
+             </div> 
+             </body>
+       
+</html>
